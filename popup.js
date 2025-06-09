@@ -9,17 +9,12 @@ window.onload = function(){
 
 const botonContinuar = document.querySelector(".popup__continuar");
 const botonSalir = document.querySelector(".popup__salir");
+const closeButton = document.querySelector(".close_button");
 
-botonContinuar.addEventListener("click", function(e){
-    e.preventDefault();
-    setCookie("popupWatched","true",1);
-    ocultarPopup();
-});
 
-botonSalir.addEventListener("click", function(e){
-    e.preventDefault();
-    ocultarPopup();
-    window.location.href = "https://www.google.com";
+closeButton.addEventListener("click", function(e) {
+    cerrarPopup();
+     // Set cookie to expire in 7 days
 });
 
 function mostrarPopup() {
@@ -40,4 +35,8 @@ function setCookie(name, value, days) {
 
 function ocultarPopup() {
     document.querySelector(".popup_container").style.display = "none";
+}
+
+function cerrarPopup() {
+    document.querySelector(".popup_container.popup_container--telegram").style.display = "none";
 }
