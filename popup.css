@@ -67,7 +67,9 @@
 }
 
 .popup--telegram img{
-    width: 220px;
+    width: 130px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 
