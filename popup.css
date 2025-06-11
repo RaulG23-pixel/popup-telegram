@@ -76,7 +76,7 @@
 .popup--telegram h1{
     font-size: 1.65rem;
     color: #014A0C;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 2.05rem;
     letter-spacing: -1px;
     margin-bottom: 20px;
@@ -84,8 +84,8 @@
 }
 
 .popup--telegram h2{
-    font-size: 1.35rem;
-    color: #014A0C;
+    font-size: 1rem;
+    color: #fff;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -130,6 +130,16 @@
     margin-top: 35px;
 }
 
+.popup__politica-telegram{
+    color: #fff;
+    font-size: 1rem!important;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: normal;
+    text-align: center;
+    margin-top: 25px;
+}
 .close_button:hover{
     color: #000;
     transition: color 0.3s ease;
