@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
@@ -9,7 +16,7 @@
 .popup_container{
     width: 100%;
     height: 100vh;
-    display: block;
+    display: flex;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -31,7 +38,7 @@
     padding: 50px 18px 50px 18px;
     align-items: center;
     flex-direction: column;
-    background-color: #74AF7D;
+    background-color: #E3EEFD;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.50);
 }
 
@@ -67,7 +74,7 @@
 }
 
 .popup--telegram img{
-    width: 110px;
+    width: 80px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -75,7 +82,7 @@
 
 .popup--telegram h1{
     font-size: 1.65rem;
-    color: #fff;
+    color: #014A0C;
     font-weight: 700;
     line-height: 2.35rem;
     letter-spacing: -1px;
@@ -85,7 +92,7 @@
 
 .popup--telegram h2{
     font-size: 1rem;
-    color: #fff;
+    color: #014A0C;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -131,7 +138,7 @@
 }
 
 .popup__politica-telegram{
-    color: #fff;
+    color: #014A0C;
     font-size: 1rem!important;
     font-style: italic;
     font-weight: 300;
@@ -188,7 +195,7 @@
     }
     
 }
-.navbar{
+    .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -201,7 +208,7 @@
     z-index: 1000;
 }
 
-.navbar a{
+    .navbar a{
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -209,26 +216,12 @@
     font-family: 'Poppins', sans-serif;
     padding-right: 14px;
     padding-left: 14px;
-}
+    }
 
-.navbar a:hover{
+    .navbar a:hover{
     color: #0C941F;
     transition: color 0.3s ease;
 }
-
-.logo_outer_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    background: #fff;
-    border-radius: 50%;
-    padding: 5px 20px;
-    width: 196px;
-    height: 190px;
-    
-}
-
 .logo_container {
     display: flex;
     justify-content: center;
@@ -236,14 +229,37 @@
     margin-bottom: 20px;
     width: 160px;
     height: 160px;
-    border: 1px solid #014A0C;
+    padding: 12px 30px;
     border-radius: 50%;
-    transform: translateY(8px);
-    
+    background: #014A0C;
 }
 
 .logo_container img {
     width: 90px;
-    transform: translateX(-8px);
-    position: relative;
+    transform: translateX(-5px);
 }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar_link" href="index.html">Mockup 1</a>
+        <a class="navbar_link" href="index-2.html">Mockup 2</a>
+        <a class="navbar_link" href="index-3.html">Mockup 3</a>
+    </nav>
+    <div class="popup_container popup_container--telegram">
+        <div class="popup popup--telegram">
+            <div class="close_button_container"> <button class="close_button">x</button></div>
+            <div>
+                <div class="logo_container">
+                    <img class="popup__logo" src="assets/Vector-8.svg" alt="telegram Logo">
+                </div>
+            </div>
+            <h1>Únete a nuestro canal de telegram</h1>
+            <h2>Tu acceso directo a descuentos irresistibles y novedades que no querrás perderte.</h2>
+            <div class="popup__buttons">
+                <a class="popup__unirse" target="_blank" href="#">Unirse</a>
+            </div>
+            <a class="popup__politica-telegram" href="https://cogollocbd.es/content/8-politica-de-privacidad">Consulta nuestra política de privacidad</a>
+    </div>
+</body>
+</html>
