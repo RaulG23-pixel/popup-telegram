@@ -3,32 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="popup.css">
     <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a class="navbar_link" href="index.html">Mockup 1</a>
-        <a class="navbar_link" href="index-2.html">Mockup 2</a>
-        <a class="navbar_link" href="index-3.html">Mockup 3</a>
-    </nav>
-    <div class="popup_container popup_container--telegram">
-        <div class="popup popup--telegram">
-            <div class="close_button_container"> <button class="close_button">x</button></div>
-            <div>
-                <div class="logo_outer_container">
-                    <div class="logo_container">
-                        <img class="popup__logo" src="assets/Vector-7.svg" alt="telegram Logo">
+    <div class="btn_telegram">
+        <button><img src="assets/telegram Logo.svg" alt=""></button>
+    </div>
+    <div id="telegramPopupOverlay" class="telegram-popup-overlay">
+        <div class="telegram-popup-container">
+            <button class="btn_ocultar"><img src="assets/Frame.svg" alt=""> Ocultar</button>
+            <div class="telegram-popup-content">      
+                <div class="popup-main-body">
+                    <div class="popup-left-graphic">
+                        <div class="cogollo_header">
+                            <img src="assets/cogollo_logo.png" alt="logo_cogollocbd">
+                        </div>
+                        <div class="popup-left-graphic-content">
+                            <div class="avatar_content">
+                                <img src="assets/avatar_1-02 1.png" alt="">
+                                <img src="assets/avatar_3-03 1.png" alt="">
+                            </div>
+                            <div class="ilustration_content">
+                                <img src="assets/elementos-06-06 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup-right-info">
+                        <h3>Únete a nuestro canal de Telegram</h3>
+                        <p>Y llévate un</p>
+                        <div class="discount-percent">
+                            <span class="percentage">10%</span>
+                            <span class="text">De descuento exclusivo</span>
+                        </div>
+                        <p class="next-order">En tu próximo pedido <span class="cart-icon"><img src="assets/carrito.svg" alt=""></span></p>
+                        <a href="#" target="_blank" class="join-telegram-btn">
+                            <span class="telegram-icon"><img src="assets/telegram Logo.svg" alt=""></span> Unirse
+                        </a>
                     </div>
                 </div>
             </div>
-            <h1>Únete a nuestro canal de telegram</h1>
-            <h2>Tu acceso directo a descuentos irresistibles y novedades que no querrás perderte.</h2>
-            <div class="popup__buttons">
-                <a class="popup__unirse" target="_blank" href="#">Unirse</a>
-            </div>
-            <a class="popup__politica-telegram" href="https://cogollocbd.es/content/8-politica-de-privacidad">Consulta nuestra política de privacidad</a>
+        </div>
     </div>
-    <script src="popup.js"></script>
+<script src="popup.js"></script>
 </body>
 </html>
