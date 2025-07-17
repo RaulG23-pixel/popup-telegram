@@ -52,8 +52,8 @@ body {
     box-shadow: 0 4px 10px #0b1b0c;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     font-size: 13px; /* Tamaño de la X */
     color: white; /* Color de la X */
 }   
@@ -480,7 +480,7 @@ body {
 @media (max-width: 768px) {
     .telegram-popup-container {
         max-width: 95%;
-        transform: translateY(-2vh);
+        transform: translateY(-3vh);
         border: none; /* Quitar borde en móviles si es muy ancho */
     }
 
