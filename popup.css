@@ -36,9 +36,27 @@ body {
     background-color: rgb(1, 94, 128); /* Color más oscuro al pasar el mouse */
     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
 }
-.btn_telegram.disabled{
-    display:none;
+
+.btn_cross {
+    position: absolute;
+    top: -45px;
+    right: 0px; /* Ajusta la posición para que no se superponga con el botón de Telegram */
+    cursor: pointer;
+    z-index: 1001; /* Asegura que el botón esté por encima de otros elementos */
 }
+.btn_cross button {
+    background-color: #388E3C; /* Color de fondo azul */
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 10px #0b1b0c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    font-size: 20px; /* Tamaño de la X */
+    color: white; /* Color de la X */
+}   
 /* Estilos del overlay del popup */
 .telegram-popup-overlay {
     display: none; /* Oculto por defecto */
