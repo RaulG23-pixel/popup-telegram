@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e0e0e0; /* Color de fondo similar al de la imagen */
-    
-}
 
 .btn_telegram {
     position: fixed;
@@ -68,6 +61,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Contenedor principal del popup */
