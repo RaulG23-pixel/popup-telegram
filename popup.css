@@ -238,7 +238,7 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     width: 100%;
-    padding: 40px 10px;
+    padding: 28px 10px;
 }
 .cogollo_header img {
     width: 65%;
@@ -369,11 +369,12 @@ body {
 }
 
 .popup-right-info p {
-    color: #000;
-    font-size: 1.1rem;
+    color: #2a2a2a;
+    font-size: 0.9rem;
     margin-bottom: 5px;
     font-weight: bold;
     display: flex;
+    letter-spacing: 1px;
     align-items: center;
 }
 
@@ -394,7 +395,7 @@ body {
 
 .discount-percent .text {
     color: rgba(1, 74, 12, 1);
-    font-size: 1.3em;
+    font-size: 1.15em;
     width: 50%;
     font-weight: 800;
     line-height: 1.2;
@@ -410,7 +411,7 @@ body {
 }
 
 .cart-icon {
-    width: 32px;;
+    width: 26px;
     margin-left: 5px;
     display: block;
 }
@@ -437,7 +438,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
-    margin-top: 15px;
+    margin-top: 38px;
 
 }
 
@@ -461,22 +462,37 @@ body {
 @media (max-width: 768px) {
     .telegram-popup-container {
         max-width: 95%;
+        transform: translateY(-20px);
         border: none; /* Quitar borde en móviles si es muy ancho */
     }
 
     .popup-main-body {
         flex-direction: column; /* Apilar en pantallas pequeñas */
-        padding-top: 70px; /* Más espacio para el header */
     }
+   .cogollo_header{
+    padding: 10px;
+   }
 
+   .cogollo_header img{
+    width: 60%;
+   }
     .popup-left-graphic {
-        padding: 15px;
+        padding: 9px 15px 9px 15px;
         min-height: 200px; /* Asegura que la gráfica tenga algo de altura */
     }
+    .popup-left-graphic-content{
+        align-items: center;
+        justify-content: center;
+    }
+    .ilustration_content {
+        width: 50%;
+    }
 
-    .telegram-mockup {
-        width: 180px;
-        height: 280px;
+    .ilustration_content img {
+        width: 100%;
+    }
+    .avatar_content {
+        min-height: 218px;
     }
 
     .popup-header-logo {
@@ -488,33 +504,64 @@ body {
     }
 
     .popup-right-info {
-        padding: 20px;
+        padding: 0 15px 15px 15px;
     }
 
     .popup-right-info h3 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+    .discount-percent {
+        margin: 10px 0;
     }
 
     .discount-percent .percentage {
-        font-size: 3em;
+        font-size: 2.6em;
     }
 
     .discount-percent .text {
-        font-size: 1.2em;
+        font-size: 1.12em;
     }
 
     .next-order {
         font-size: 0.9em;
     }
 
+    
+
     .join-telegram-btn {
-        font-size: 1.1em;
-        padding: 10px 20px;
+        font-size: 1em;
+        padding: 7px 20px;
+        margin-top: 20px;
     }
 
     .telegram-popup-hide-tab {
         font-size: 12px;
         padding: 8px 12px 8px 20px;
         left: -30px;
+    }
+    .btn_ocultar{
+        transform: none;
+        bottom: -32px;
+        display: flex;
+        left: 0;
+        font-size: 12px;
+        padding: 6px 15px;
+        align-items: center;
+        justify-content: space-around;   
+    }
+    .btn_ocultar img{
+        width: 15px;
+        height: auto;
+    }
+
+    .btn_telegram button img {
+    width: 27px;
+    height: auto;
+}
+
+    .btn_telegram button{
+        width: 56px;
+        height: 56px;
     }
 }
