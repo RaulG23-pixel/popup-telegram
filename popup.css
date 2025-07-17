@@ -462,7 +462,7 @@ body {
 @media (max-width: 768px) {
     .telegram-popup-container {
         max-width: 95%;
-        transform: translateY(-30px);
+        transform: translateY(-40px);
         border: none; /* Quitar borde en móviles si es muy ancho */
     }
 
